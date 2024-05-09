@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Handlee&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sintony:wght@400;700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Young+Serif&display=swap');
+
+
+:root{
+ 
+
+--nutmeg: hsl(14, 45%, 36%);
+--darkRaspberry: hsl(332, 51%, 32%);
+
+
+
+--white: hsl(0, 0%, 100%);
+--roseWhite: hsl(330, 100%, 98%);
+--eggshell: hsl(30, 54%, 90%);
+--lightGrey: hsl(30, 18%, 87%);
+--wengeBrown: hsl(30, 10%, 34%);
+--darkCharcoal: hsl(24, 5%, 18%);
+
+
+
+--fontSizepParagraph: 16px;
+
+--fontFamily400 : "Young Serif", serif;
+--fontWeight400 : 400;
+
+--font-family : "Outfit", sans-serif;
+}
+
+body{
+    background-color: var(--eggshell);
+    font-family: var(--font-family);
+    font-weight: 500;
+    line-height: 2rem;
+    color: var(--wengeBrown);
+}
+h1{
+    font-weight: 800;
+}
+
+h1,h2{
+    font-family: var(--fontFamily400);
+}
+
+h2{
+    font-weight: 600;
+    color: var(--nutmeg);
+}
+.span{
+    font-weight: bold;
+    
+}
+
+li{
+    padding-left: 30px;
+}
+
+.container{
+    width: 60%;
+    overflow: hidden;
+    background-color: var(--white);
+    margin: 5% auto 5% auto;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+#contentIMG{
+    width: 100%;
+}
+
+#contentIMG img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#contentHeading h1{
+    font-family: var(--fontFamily400);
+    
+    color: var(--darkCharcoal);
+}
+
+#preparationTime{
+    background-color: var(--roseWhite);
+    border-radius: 20px;
+    padding: 10px 0  10px 20px;
+}
+
+#preparationTime h3{
+    color: var(--darkRaspberry);
+    font-weight: 800;
+}
+
+#nutrition{
+    width: 100%;
+}
+
+.nutritionTable{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.table{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+.tableborder{
+    border-bottom: 1px solid var(--lightGrey);
+}
+
+@media screen and (max-width: 375px) {
+.container{
+    display: flex;
+    flex-direction: column;
+}
+}
